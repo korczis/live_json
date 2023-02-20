@@ -31,12 +31,12 @@ defmodule LiveJson.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:phoenix, "~> 1.6.0"},
-      {:phoenix_html, "~> 3.1"},
+      {:phoenix, ">= 1.6.0"},
+      {:phoenix_html, ">= 3.1.0"},
       {:phoenix_live_view, ">= 0.16.0", allow_pre: true},
       {:jsonpatch, "~> 0.13.1"},
       {:json_diff_ex, "~> 0.5.0"},
-      {:jason, "~> 1.3.0", optional: true},
+      {:jason, ">= 1.3.0", optional: true},
       {:esbuild, "~> 0.2", only: :dev},
       {:telemetry, "~> 0.4.2 or ~> 1.0"},
       {:ex_doc, "~> 0.27", only: :dev, runtime: false}
